@@ -9,6 +9,8 @@ ZSH_THEME="isaac"
 
 # Example aliases
 alias grep='GREP_COLOR="1;37;41" LANG=C grep --color=auto -rn -C 3'
+alias rbt='ruby -Ilib:test'
+alias rk='rake'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
