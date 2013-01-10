@@ -9,6 +9,10 @@
 	cmd = ~/.default-difftool.sh $LOCAL $REMOTE
 [difftool]
 	prompt = false
+[merge]
+	tool = xxdiff
+[mergetool "xxdiff"]
+	cmd = ~/.default-difftool.sh $LOCAL $BASE $REMOTE $MERGED
 [alias]
 	dt = difftool
 	lola = log --all --decorate --pretty=oneline --graph --abbrev-commit --color
@@ -17,3 +21,7 @@
 	c = commit
 [core]
 	editor = emacs
+[color]
+	branch = auto
+  	diff = auto
+  	status = auto
